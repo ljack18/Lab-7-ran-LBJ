@@ -14,3 +14,24 @@ LBJ's first message in the document
 Kermit says hi
 
 "LBJ has changed name to "Github Seaweed Queen""
+
+"lauraing has pivoted into oblivion"
+
+If you are the collaborator:
+- load the tidyverse
+- read in the kermit data as 'kermit'
+- make some side-by-side histograms of the Score.pre for all respondents, separated by the Gender column
+
+```{r}
+
+library(tidyverse)
+kermit <- read_csv("kermit.csv")
+
+kermit_hist <- ggplot(kermit, aes(x = Score.pre)) +
+  geom_histogram(bins = 4) +
+  facet_wrap(~Gender)
+
+kermit_hist
+
+```
+
