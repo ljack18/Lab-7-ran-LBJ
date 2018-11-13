@@ -10,3 +10,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 LBJ's first message in the document
+
+Kermit says hi
