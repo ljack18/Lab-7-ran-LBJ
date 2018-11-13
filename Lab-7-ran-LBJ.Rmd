@@ -15,7 +15,7 @@ Kermit says hi
 
 "LBJ has changed name to "Github Seaweed Queen""
 
-"lauraing has pivoted into oblivion"
+"lauraing has pivoted into oblivion" <- yes.
 
 If you are the collaborator:
 - load the tidyverse
@@ -35,3 +35,18 @@ kermit_hist
 
 ```
 
+Creator: Perform ranked-based comparissons using Man-Whitney U abd Wilcoxin-Signed Rank
+
+Question: Is there a significant difference in pretalk ranks of kermit for Male and Female respondents?
+
+```{r}
+mwu_kermit <- kermit %>% 
+  wilcox.test(Score.pre ~ Gender, .)
+
+# Null : There is not a significant difference in ranks for male and female respondents
+# Alternative: There is a significant difference in ranks for male and female respondents
+
+mwu_kermit
+```
+
+There was no significant difference in ranks between male and female respondents (W = 155.5, p = 0.04, alpha = 0.05)
