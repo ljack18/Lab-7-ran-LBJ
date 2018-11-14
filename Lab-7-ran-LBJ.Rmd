@@ -65,3 +65,16 @@ wsr_kermit
 ```
 
 There is no significant difference in ranks for pre- and post-talk Kermit scores (statistical summary here...)
+
+
+
+
+
+
+
+
+- Choose one of your partners in your group to make a new repo called iris graphs
+-Invite partner to join as a collaborator
+-Everyone clone to RStudio
+-One person make a graph of petal length v petal width using the built in 'iris' dataset in R
+-Practice going back and forth updating one thing on the graph (point colors, theme, acis labels, facet_wrap based on species)
